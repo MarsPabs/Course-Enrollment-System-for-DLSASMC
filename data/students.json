@@ -1,0 +1,146 @@
+[
+  {
+    "student_id": "S1001",
+    "name": "Marlon Pabroa",
+    "grade_level": 12,
+    "password": "pass123",
+    "enrolled_courses": [
+      "CS101",
+      "BIO201",
+      "ENG101",
+      "PHYS101",
+      "CHEM101"
+    ],
+    "balance": 2500,
+    "transactions": [
+      {
+        "date": "2025-03-31 05:51:54",
+        "description": "Enrollment fee for Introduction to Programming",
+        "amount": 500,
+        "type": "charge"
+      },
+      {
+        "date": "2025-03-31 05:51:55",
+        "description": "Enrollment fee for Biology I",
+        "amount": 500,
+        "type": "charge"
+      },
+      {
+        "date": "2025-03-31 05:51:55",
+        "description": "Enrollment fee for English Composition",
+        "amount": 500,
+        "type": "charge"
+      },
+      {
+        "date": "2025-03-31 05:51:56",
+        "description": "Enrollment fee for Physics I",
+        "amount": 500,
+        "type": "charge"
+      },
+      {
+        "date": "2025-03-31 05:51:56",
+        "description": "Enrollment fee for Chemistry I",
+        "amount": 500,
+        "type": "charge"
+      }
+    ]
+  },
+  {
+    "student_id": "S1002",
+    "name": "Jackine Geoca",
+    "grade_level": 12,
+    "password": "pass123",
+    "enrolled_courses": [],
+    "balance": 0,
+    "transactions": []
+  },
+  {
+    "student_id": "S1003",
+    "name": "Ryle Cabanilla",
+    "grade_level": 12,
+    "password": "pass123",
+    "enrolled_courses": [],
+    "balance": 0,
+    "transactions": []
+  },
+  {
+    "student_id": "S1004",
+    "name": "Xyrill Mensoro",
+    "grade_level": 12,
+    "password": "pass123",
+    "enrolled_courses": [
+      "CS101",
+      "BIO201",
+      "ENG101"
+    ],
+    "balance": 2500,
+    "transactions": [
+      {
+        "date": "2025-03-30 23:25:40",
+        "description": "Enrollment fee for Introduction to Programming",
+        "amount": 500,
+        "type": "charge"
+      },
+      {
+        "date": "2025-03-30 23:25:41",
+        "description": "Enrollment fee for Biology I",
+        "amount": 500,
+        "type": "charge"
+      },
+      {
+        "date": "2025-03-30 23:25:42",
+        "description": "Enrollment fee for English Composition",
+        "amount": 500,
+        "type": "charge"
+      },
+      {
+        "date": "2025-03-30 23:25:42",
+        "description": "Enrollment fee for Physics I",
+        "amount": 500,
+        "type": "charge"
+      },
+      {
+        "date": "2025-03-30 23:25:43",
+        "description": "Enrollment fee for Chemistry I",
+        "amount": 500,
+        "type": "charge"
+      }
+    ]
+  },
+  {
+    "student_id": "S1005",
+    "name": "Norvy Daclan",
+    "grade_level": 12,
+    "password": "pass123",
+    "enrolled_courses": [],
+    "balance": 0,
+    "transactions": []
+  },
+  {
+    "student_id": "S1006",
+    "name": "Jerry Amatorio",
+    "grade_level": 12,
+    "password": "pass123",
+    "enrolled_courses": [
+      "CS101",
+      "BIO201",
+      "ENG101",
+      "PHYS101",
+      "CHEM101"
+    ],
+    "balance": 0,
+    "transactions": []
+  },
+  {
+    "student_id": "S1007",
+    "name": "Franz Mangyao",
+    "grade_level": 10,
+    "password": "pass123",
+    "enrolled_courses": [
+      "PHYS101",
+      "CHEM101"
+    ],
+    "balance": 0,
+    "transactions": []
+  }
+]

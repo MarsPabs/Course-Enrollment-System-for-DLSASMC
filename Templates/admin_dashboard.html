@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block title %}Admin Dashboard - School Enrollment System{% endblock %}
+
+{% block content %}
+<h1>Administrator Dashboard</h1>
+
+<div class="row mb-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Courses</h5>
+                <a href="{{ url_for('add_course') }}" class="btn btn-primary btn-sm">Add New Course</a>
+            </div>
+            <div class="card-body">
+                {% if courses %}
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Instructor</th>
+                                    <th>Enrollment</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for course in courses %}
+                                    <tr>
+                                        <td>{{ course.course_id }}</td>
+                                        <td>{{ course.name }}</td>
+                                        <td>{{ course.instructor }}</td>
+                                        <td>{{ course.enrolled_students|length }}/{{ course.capacity }}</td>
+                                        <td>
+                                            <a href="{{ url_for('view_course_roster', course_id=course.course_id) }}" class="btn btn-info btn-sm">Roster</a>
+                                            <a href="{{ url_for('remove_course', course_id=course.course_id) }}" class="btn btn-danger btn-sm">Remove</a>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                {% else %}
+                    <p>No courses available.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Students</h5>
+                <a href="{{ url_for('add_student') }}" class="btn btn-primary btn-sm">Add New Student</a>
+            </div>
+            <div class="card-body">
+                {% if students %}
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Grade Level</th>
+                                    <th>Enrolled Courses</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for student in students %}
+                                    <tr>
+                                        <td>{{ student.student_id }}</td>
+                                        <td>{{ student.name }}</td>
+                                        <td>{{ student.grade_level }}</td>
+                                        <td>{{ student.enrolled_courses|length }}</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                {% else %}
+                    <p>No students registered.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
