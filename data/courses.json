@@ -1,0 +1,62 @@
+[
+  {
+    "course_id": "CS101",
+    "name": "Introduction to Programming",
+    "instructor": "Jomar Leano",
+    "schedule": "MWF 9:00-10:30",
+    "capacity": 30,
+    "fee": 1000,
+    "enrolled_students": [
+      "S1006",
+      "S1004"
+    ]
+  },
+  {
+    "course_id": "BIO201",
+    "name": "Biology I",
+    "instructor": "Stephanie Mores",
+    "schedule": "TTh 10:30-12:00",
+    "capacity": 25,
+    "fee": 1000,
+    "enrolled_students": [
+      "S1006",
+      "S1004"
+    ]
+  },
+  {
+    "course_id": "ENG101",
+    "name": "English Composition",
+    "instructor": "Vince Fernandez",
+    "schedule": "MWF 13:00-14:30",
+    "capacity": 35,
+    "fee": 1000,
+    "enrolled_students": [
+      "S1006",
+      "S1004"
+    ]
+  },
+  {
+    "course_id": "PHYS101",
+    "name": "Physics I",
+    "instructor": "Marylou Bacordio",
+    "schedule": "TTh 14:00-15:30",
+    "capacity": 20,
+    "fee": 1000,
+    "enrolled_students": [
+      "S1006",
+      "S1007"
+    ]
+  },
+  {
+    "course_id": "CHEM101",
+    "name": "Chemistry I",
+    "instructor": "Remar Bacula",
+    "schedule": "MWF 15:00-16:30",
+    "capacity": 40,
+    "fee": 1000,
+    "enrolled_students": [
+      "S1006",
+      "S1007"
+    ]
+  }
+]

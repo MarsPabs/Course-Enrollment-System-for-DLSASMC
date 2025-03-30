@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to De La Salle Andres Soriano Memorial College Enrollment System</h1>
+    <p class="lead">Access your courses, check schedules, and manage enrollments.</p>
+    <hr class="my-4">
+    {% if 'user_id' not in session %}
+        <p>Please login to continue or register if you're a new student.</p>
+        <a class="btn btn-primary btn-lg me-2" href="{{ url_for('login') }}" role="button">Login</a>
+        <a class="btn btn-success btn-lg" href="{{ url_for('register') }}" role="button">Register</a>
+    {% else %}
+        {% if session['user_type'] == 'student' %}
+            <a class="btn btn-primary btn-lg" href="{{ url_for('student_dashboard') }}" role="button">Go to Dashboard</a>
+        {% elif session['user_type'] == 'admin' %}
+            <a class="btn btn-primary btn-lg" href="{{ url_for('admin_dashboard') }}" role="button">Go to Admin Panel</a>
+        {% endif %}
+    {% endif %}
+</div>
+{% endblock %}
